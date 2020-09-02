@@ -1,0 +1,83 @@
+---
+title: "Rmarkdown_template 1"
+author: "Jiawei Fu"
+date: "1/26/2020"
+output: pdf_document
+---
+
+# Basics 1
+
+Use "#" to write the header; and you can control the size by adding more "#".
+
+For example, in the assignment, you can:
+
+## Question 1: here, you basically copy and paste the question.
+### (a): balabala
+## Solution: answer the questions here. 
+### (b): balabala
+
+
+You can put the codes in the R code chunk:
+
+```{r}
+
+
+```
+
+
+
+
+```{r}
+### r codes example
+set.seed(320)
+
+rand <- rnorm(50)   ### draw samples 
+plot(density(rand))   ### plot the density 
+```
+
+Sometimes, you would like use Inline R code. You can evaluate R expressions inline by enclosing the expression within a single back-tick qualified with ‘r’.
+
+For example, I want to know 941+134=`r 941+134`. (See rmd file how I calculate)
+
+
+Creat list using the dash:
+
+- item 1
+- item 2
+
+Emphasize with asterisk mark:
+
+*important* or **important**
+
+
+# Mathematics 1
+
+$$
+
+$$
+
+
+
+Write equations between \$\$ and \$\$. For example,
+$$
+x_i + z^j = 8-t 
+$$
+
+You can write inline equations between two dollar signs, \$ equations \$. For example: $y_i=5x_i+6$.
+
+Also, use COMMAND aligned and \&, one can write clean and beautiful equations: (see rmd file)
+$$
+\begin{aligned}
+x_{ij} &+ z^{ij} = 8-t  \\
+y_i+z_i+t &= \frac{5}{7}
+\end{aligned}
+$$
+
+If you like the Greek letters:
+
+$\alpha$ 
+$\beta$
+$\gamma$ 
+$\delta$
+$\theta$
+
